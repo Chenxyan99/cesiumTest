@@ -79,3 +79,7 @@ var showEntitiesDiv = new Vue({
     },
   },
 });
+
+var setting = new Vue({
+  el: "#setting",
+});
