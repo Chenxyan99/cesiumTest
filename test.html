@@ -7,7 +7,11 @@
     <title>cesium学习</title>
     <!-- 引入cesium -->
     <script src="./lib/Cesium/Cesium.js"></script>
-    <link rel="stylesheet" href="./lib/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="./lib/Cesium/Widgets/widgets.css"
+      rel="stylesheet"
+    />
     <!-- 引入vue -->
     <script src="/vue.js"></script>
     <!-- 引入element-ui -->
@@ -25,13 +29,12 @@
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiNGNiNTMwMy1iMTM0LTRmNjMtODQ3Zi1mMDEwMTc2N2FmYTkiLCJpZCI6MTM0NTEzLCJpYXQiOjE2ODE5MTAzOTJ9.tiKWDatrDzITuelBgU6GOGvDC9i8Uw-UVWE_2kQmTD4";
     </script>
     <div id="cesiumContainer"></div>
-    <div style="width: 100%; height: 100%; position: relative;">
+    <div style="width: 100%; height: 100%; position: relative">
       <div id="entities">
         <el-dropdown trigger="click">
           <el-button type="primary">
             显示/隐藏图层<i class="el-icon-arrow-down el-icon--right"></i>
           </el-button>
-        <el-button id="setting" type="primary" icon="el-icon-s-tools" >123 </el-button>
           <el-dropdown-menu slot="dropdown">
             <el-checkbox
               id="checkbox"
@@ -76,6 +79,10 @@
             ></el-checkbox>
           </el-dropdown-menu>
         </el-dropdown>
+      </div>
+      <div id="setting">
+        <el-button id="setting" type="primary" icon="el-icon-s-tools">
+        </el-button>
       </div>
     </div>
     <script src="head.js"></script>
