@@ -1,0 +1,40 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+#cesiumContainer{
+    width: 90%;
+    float: left;
+}
+#entities{
+    top: 50px;
+    left: 50px;
+    position: absolute;
+}
+#checkbox{
+    margin-left: 8px;
+    margin-top: 10px;
+}
+#setting{
+    top: 50px;
+    left: 200px;
+    position: absolute;
+
+}
+.el-dropdown {
+    vertical-align: top;
+}
+.el-dropdown + .el-dropdown {
+    margin-left: 15px;
+}
+.el-icon-arrow-down {
+    font-size: 12px;
+}
+.el-dropdown-menu{
+    background-color: rgb(238, 238, 238, 0.8);
+    width: 130px;
+}
+.el-button{
+    opacity: 0.8;
+}

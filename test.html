@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cesium学习</title>
+    <!-- 引入cesium -->
+    <script src="./cesium/Build/CesiumUnminified/Cesium.js"></script>
+    <link
+      rel="stylesheet"
+      href="./cesium/Build/CesiumDev/Widgets/widgets.css"
+    />
+    <!-- 引入vue -->
+    <script src="/vue.js"></script>
+    <!-- 引入element-ui -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <script>
+      Cesium.Ion.defaultAccessToken =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiNGNiNTMwMy1iMTM0LTRmNjMtODQ3Zi1mMDEwMTc2N2FmYTkiLCJpZCI6MTM0NTEzLCJpYXQiOjE2ODE5MTAzOTJ9.tiKWDatrDzITuelBgU6GOGvDC9i8Uw-UVWE_2kQmTD4";
+    </script>
+    <div id="cesiumContainer"></div>
+    <div style="width: 100%; height: 100%; position: relative;">
+      <div id="entities">
+        <el-dropdown trigger="click">
+          <el-button type="primary">
+            显示/隐藏图层<i class="el-icon-arrow-down el-icon--right"></i>
+          </el-button>
+        <el-button id="setting" type="primary" icon="el-icon-s-tools" >123 </el-button>
+          <el-dropdown-menu slot="dropdown">
+            <el-checkbox
+              id="checkbox"
+              v-model="checked1"
+              label="卫星"
+              @change="showSatellite(checked1)"
+            ></el-checkbox>
+            <el-checkbox
+              id="checkbox"
+              v-model="checked2"
+              label="轨迹"
+              @change="showOrbit(checked2)"
+            ></el-checkbox>
+            <el-checkbox
+              id="checkbox"
+              v-model="checked3"
+              label="实时波束"
+              @change="showBeam(checked3)"
+            ></el-checkbox>
+            <el-checkbox
+              id="checkbox"
+              v-model="checked4"
+              label="历史波束"
+              @change="showHistoryBeam(checked4)"
+            ></el-checkbox>
+            <el-checkbox
+              id="checkbox"
+              v-model="checked5"
+              label="最大波束"
+              @change="showBeamMaxArea(checked5)"
+            ></el-checkbox>
+            <el-checkbox
+              id="checkbox"
+              v-model="checked6"
+              label="星座网格"
+            ></el-checkbox>
+            <el-checkbox
+              id="checkbox"
+              v-model="checked7"
+              label="任务线"
+              @change="showSegment(checked7)"
+            ></el-checkbox>
+          </el-dropdown-menu>
+        </el-dropdown>
+      </div>
+    </div>
+    <script src="head.js"></script>
+    <script src="segment.js"></script>
+    <script src="beam.js"></script>
+    <script src="satellite.js"></script>
+    <script src="showLayer.js"></script>
+  </body>
+</html>
