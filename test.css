@@ -15,11 +15,6 @@ html,body {
     margin-left: 8px;
     margin-top: 10px;
 }
-#setting{
-    top: 50px;
-    left: 210px;
-    position: absolute;
-}
 .el-dropdown {
     vertical-align: top;
 }
@@ -31,8 +26,13 @@ html,body {
 }
 .el-dropdown-menu{
     background-color: rgb(238, 238, 238, 0.8);
-    width: 130px;
+    width: 150px;
 }
 .el-button{
     opacity: 0.8;
+}
+.el-icon-s-tools{
+    float:right;
+    margin-top: 12px;
+    margin-right: 10px;
 }

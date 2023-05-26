@@ -37,48 +37,61 @@
               label="卫星"
               @change="showSatellite(checked1)"
             ></el-checkbox>
+            <i class="el-icon-s-tools"></i>
             <el-checkbox
               id="checkbox"
               v-model="checked2"
               label="轨迹"
               @change="showOrbit(checked2)"
             ></el-checkbox>
+            <i class="el-icon-s-tools"></i>
+
             <el-checkbox
               id="checkbox"
               v-model="checked3"
               label="实时波束"
               @change="showBeam(checked3)"
             ></el-checkbox>
+            <i class="el-icon-s-tools"></i>
+
             <el-checkbox
               id="checkbox"
               v-model="checked4"
               label="历史波束"
               @change="showHistoryBeam(checked4)"
             ></el-checkbox>
+            <i class="el-icon-s-tools"></i>
+
             <el-checkbox
               id="checkbox"
               v-model="checked5"
               label="最大波束"
               @change="showBeamMaxArea(checked5)"
             ></el-checkbox>
+            <i class="el-icon-s-tools"></i>
+
             <el-checkbox
               id="checkbox"
               v-model="checked6"
               label="星座网格"
             ></el-checkbox>
+            <i class="el-icon-s-tools"></i>
+
             <el-checkbox
               id="checkbox"
               v-model="checked7"
               label="任务线"
               @change="showSegment(checked7)"
             ></el-checkbox>
+            <i class="el-icon-s-tools"></i>
+
           </el-dropdown-menu>
         </el-dropdown>
       </div>
-      <div id="setting">
+      <!-- <div id="setting">
         <el-button type="primary" icon="el-icon-s-tools" circle>
         </el-button>
-      </div>
+      </div> -->
     </div>
     <script src="head.js"></script>
     <script src="segment.js"></script>
